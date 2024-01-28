@@ -26,8 +26,25 @@
         <div class="container d-flex align-items-center">
 
             <div class="logo me-auto">
-                <h1>Observatorio Tecnologico</h1>
+                <h1 class="desktop">Observatorio Tecnologico</h1>
+                <h1 class="mobile">OTEC</h1>
             </div>
+            
+            <style>
+                /* Estilos para pantallas grandes (PC) */
+                @media (min-width: 992px) { 
+                    .mobile {
+                        display: none;
+                    }
+                }
+            
+                /* Estilos para pantallas pequeñas (celulares) */
+                @media (max-width: 991px) { 
+                    .desktop {
+                        display: none;
+                    }
+                }
+            </style>
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
